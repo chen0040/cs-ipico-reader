@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Net;
 using System.Net.NetworkInformation;
-using SimuKit.Sports.IPICO.TcpSockets;
-using SimuKit.Sports.IPICO.Ftp;
+using IpicoReader.TcpSockets;
+using IpicoReader.Ftp;
 
-namespace SimuKit.Sports.IPICO
+namespace IpicoReader
 {
     public class ReaderUtil
     {
@@ -146,17 +146,17 @@ namespace SimuKit.Sports.IPICO
 
         public static void DownloadLog(string host, string logname, string local_path, FtpUtil.DownloadFileProgressHandle handle=null)
         {
-            FtpUtil.DownloadFileByNameAsync(host, logname, local_path, handle);
+            FtpUtil.DownloadFileByName(host, logname, local_path, handle);
         }
 
         public static List<string> ReadTags(string host, string logname, FtpUtil.CriteriaHandle handle=null)
         {
-            return FtpUtil.ReadTagsAsync(host, logname, handle);
+            return FtpUtil.ReadTags(host, logname, handle);
         }
 
         public static List<ReaderRecord> ReadRecords(string host, string logname, FtpUtil.CriteriaHandle handle = null)
         {
-            return FtpUtil.ReadRecordsAsync(host, logname, handle);
+            return FtpUtil.ReadRecords(host, logname, handle);
         }
 
         /// <summary>

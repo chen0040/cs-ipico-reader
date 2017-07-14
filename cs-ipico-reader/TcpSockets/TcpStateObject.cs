@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Net.Sockets;
 
-namespace SimuKit.Sports.IPICO.TcpSockets
+namespace IpicoReader.TcpSockets
 {
     public class TcpStateObject
     {

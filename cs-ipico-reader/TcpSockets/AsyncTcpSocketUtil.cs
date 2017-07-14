@@ -6,7 +6,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Net;
 
-namespace SimuKit.Sports.IPICO.TcpSockets
+namespace IpicoReader.TcpSockets
 {
     public class AsyncTcpSocketUtil
     {

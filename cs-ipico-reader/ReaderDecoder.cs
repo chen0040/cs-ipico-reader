@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Globalization;
 
-namespace SimuKit.Sports.IPICO
+namespace IpicoReader
 {
     /// <summary>
     /// Description of tagChars.

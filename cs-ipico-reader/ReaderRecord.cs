@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SimuKit.Sports.IPICO
+namespace IpicoReader
 {
     public class ReaderRecord
     {
